@@ -28,7 +28,7 @@ jobs:
     - name: Update ld
       run: |
         apt-get update
-        apt-get install ld -y
+        apt-get install binutils -y
     - name: Build
       run: make -j$(nproc --all)
     - uses: actions/upload-artifact@v2
