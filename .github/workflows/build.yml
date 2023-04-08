@@ -25,7 +25,7 @@ jobs:
         fetch-depth: 0
     - name: debug
       run: git describe --tags
-    - name: Update ld
+    - name: Update Binutils
       run: |
         apt-get update
         apt-get install binutils -y
